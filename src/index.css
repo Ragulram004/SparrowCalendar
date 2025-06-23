@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+.border-primary{
+  @apply border-gray-300;
+}
+
+.bar-back{
+  @apply bg-[#F8FAFD];
+}
+
+.text-primary{
+  @apply text-gray-900;
+}
+
+.button-primary{
+  @apply flex flex-row items-center justify-between
+      gap-2 bg-[#305DDD] hover:bg-[#526fff] text-white font-semibold py-3 px-5 rounded-full transition-colors duration-300
+      cursor-pointer; 
+}
+
+@theme{
+  --font-primary: "Poppins", "sans-serif";
+  --font-secondary: "Roboto", "sans-serif";
+}
