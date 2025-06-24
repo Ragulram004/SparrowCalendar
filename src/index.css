@@ -14,7 +14,7 @@
 
 .button-primary{
   @apply flex flex-row items-center justify-between
-      gap-2 bg-[#305DDD] hover:bg-[#526fff] text-white font-semibold py-3 px-5 rounded-full transition-colors duration-300
+      gap-2 bg-[#305DDD] hover:bg-[#404f9a] text-white font-semibold py-3 px-5 rounded-full transition-colors duration-300
       cursor-pointer; 
 }
 
