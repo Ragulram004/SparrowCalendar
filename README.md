@@ -33,7 +33,8 @@ A modern, responsive Google Calendar–like application built with **React**, **
 
 ## 📁 Folder Structure
 
-📦src
+<div>
+  📦src
 ┣ 📂components
 ┃ ┣ 📄Header.jsx
 ┃ ┣ 📄Sidebar.jsx
@@ -48,6 +49,7 @@ A modern, responsive Google Calendar–like application built with **React**, **
 ┃ ┗ 📄helper.js
 ┣ 📄App.jsx
 ┗ 📄main.jsx
+</div>
 
 
 
