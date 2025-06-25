@@ -1,6 +1,8 @@
 import React from 'react'
 import calendar from '../assets/calendar.webp'
 import Navigator from './Navigator';
+import dayjs from 'dayjs';
+import { IoCalendar } from "react-icons/io5";
 
 const Header = () => {
   return (
@@ -14,8 +16,14 @@ const Header = () => {
           <Navigator/>
         </div>
       </div>
-      <div className='hidden md:block w-10 h-10 bg-gray-300 rounded-full justify-self-end '>
-
+      <div className='hidden md:flex justify-self-end flex-row items-center gap-2'>
+        <div>
+          <IoCalendar/>
+        </div>
+        <div>
+           <p className='text-xs'>Today</p>
+            <p className='font-light text-sm'>{dayjs().format('DD-MM-YY')}, {dayjs().format('dddd')}</p>
+        </div>
       </div>
     </header>
   )

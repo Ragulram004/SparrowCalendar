@@ -49,7 +49,7 @@ const Day = ({ day, rowIdx }) => {
 
 
   return (
-    <div className={`flex flex-col max-h-[160px]  ${getCurrentDayClass()} `} onDoubleClick={handleDoubleClick}>
+    <div className={`flex flex-col max-h-[160px]  ${getCurrentDayClass()} ${dayEvents.length > 0 ? "bg-gray-100" : ""} `} onDoubleClick={handleDoubleClick}>
       <div className="flex flex-col items-start mb-1">
           <p className={`text-sm md:text-lg `}>
             {day.format("DD")}
@@ -59,7 +59,7 @@ const Day = ({ day, rowIdx }) => {
       <div className="flex-1 overflow-y-scroll no-scrollbar">
         {dayEvents.map((evt, idx) => (
           <div
-          key={idx}
+            key={idx}
             className={`${getEventBgColor(evt.label)} 
               text-[13px] px-2 py-1 m-0.5 border-l-3 rounded-e-2xl cursor-pointer transition-all duration-200
               flex flex-row items-center gap-2 whitespace-nowrap
