@@ -33,23 +33,24 @@ A modern, responsive Google Calendar–like application built with **React**, **
 
 ## 📁 Folder Structure
 
-<div>
-  📦src
-┣ 📂components
-┃ ┣ 📄Header.jsx
-┃ ┣ 📄Sidebar.jsx
-┃ ┣ 📄MonthCalendar.jsx
-┃ ┣ 📄Day.jsx
-┃ ┣ 📄EventModel.jsx
-┃ ┣ 📄MyLabels.jsx
-┃ ┗ 📄Footer.jsx
-┣ 📂Store
-┃ ┗ 📄useCalendarStore.js
-┣ 📂utils
-┃ ┗ 📄helper.js
-┣ 📄App.jsx
-┗ 📄main.jsx
-</div>
+📦 src
+├── 📂 components
+│ ├── Header.jsx
+│ ├── Sidebar.jsx
+│ ├── MonthCalendar.jsx
+│ ├── Day.jsx
+│ ├── EventModel.jsx
+│ ├── MyLabels.jsx
+│ └── Footer.jsx
+│
+├── 📂 Store
+│ └── useCalendarStore.js
+│
+├── 📂 utils
+│ └── helper.js
+│
+├── App.jsx
+└── main.jsx
 
 
 
