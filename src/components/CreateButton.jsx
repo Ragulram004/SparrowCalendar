@@ -1,14 +1,16 @@
 import React, {useContext} from 'react'
 import { LuPlus } from 'react-icons/lu';
+import  useCalendarStore  from '../Store/useCalendarStore';
+
 
 const CreateButton = () => {
 
-  // const {setShowModel} = useContext();
+  const setShowEventModal = useCalendarStore((state) => state.setShowEventModal);
 
   return (
     <button
       onClick={() => {
-        // setShowModel(true)
+        setShowEventModal(true);
       }}
       className='button-primary'
     >

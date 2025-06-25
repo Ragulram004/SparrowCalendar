@@ -4,6 +4,14 @@
   @apply border-gray-300;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .bar-back{
   @apply bg-[#F8FAFD];
 }
