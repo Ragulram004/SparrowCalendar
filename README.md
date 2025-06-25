@@ -1,12 +1,79 @@
-# React + Vite
+# 📅 Sparrow Calendar App
+A modern, responsive Google Calendar–like application built with **React**, **Zustand** for global state, and **TailwindCSS** for styling. Easily manage events, label them with colors, and navigate through months and years.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
+![image](https://github.com/user-attachments/assets/d5ff7872-709d-4990-9a1a-b6b4b3784d05)
+---
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Month-based calendar grid with day cells
+- ✅ Add, edit, and delete events
+- ✅ Label-based event categorization with color indicators
+- ✅ Modal-based event form with dynamic state
+- ✅ Filter events by selected labels
+- ✅ Persist data using `localStorage`
+- ✅ Highlight today, current day, and shade event days
+- ✅ Responsive UI using TailwindCSS
+- ✅ Zustand-powered global state management
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- **React** – frontend UI
+- **Zustand** – lightweight global state store
+- **TailwindCSS** – utility-first styling
+- **Day.js** – date/time formatting
+- **React Icons** – icon library
+- **React Hot Toast** – feedback/toast notifications
+- **LocalStorage** – persistent event saving
+
+---
+
+## 📁 Folder Structure
+
+📦src
+┣ 📂components
+┃ ┣ 📄Header.jsx
+┃ ┣ 📄Sidebar.jsx
+┃ ┣ 📄MonthCalendar.jsx
+┃ ┣ 📄Day.jsx
+┃ ┣ 📄EventModel.jsx
+┃ ┣ 📄MyLabels.jsx
+┃ ┗ 📄Footer.jsx
+┣ 📂Store
+┃ ┗ 📄useCalendarStore.js
+┣ 📂utils
+┃ ┗ 📄helper.js
+┣ 📄App.jsx
+┗ 📄main.jsx
+
+
+
+---
+
+## 🧠 Zustand Store Overview
+
+Stored in `useCalendarStore.js`, Zustand manages:
+
+- `monthIndex`, `currentYear` → for calendar navigation
+- `savedEvents` → all events (persisted in localStorage)
+- `filteredEvents` → events filtered by active labels
+- `showEventModal`, `selectedEvent`, `daySelected`
+- `labels` → label colors and filters
+
+---
+
+## 🖥 Installation
+
+```bash
+# Clone the repository
+git clone [https://github.com/your-username/sparrow-calendar.git](https://github.com/Ragulram004/SparrowCalendar.git)
+cd sparrowCalendar
+
+# Install dependencies
+npm install
+
+# Run locally
+npm run dev
